@@ -281,8 +281,10 @@ header .dropdown-item {
 }
 
 #display-filtro{
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-bottom: 50px;
 }
+
 #display-filtro h4{
     font-size:12px;
     display: block;
@@ -313,4 +315,132 @@ header .dropdown-item {
 #bloco-filtro li a.ativo{
     background-color: rgba(111,143,166,0.2);
     text-decoration: none;
+}
+
+.postagens{
+    position: relative;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+.postagens h4{
+    font-size: 16px;
+    line-height: 150%;
+    color: #131C23;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 70px;
+}
+
+.postagens h4:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.bg-alimentacao.postagens h4:before{
+    background: url(../../img/Ico-alimentacao.svg) no-repeat;
+}
+
+.bg-sono.postagens h4:before{
+    background: url(../../img/Ico-sono.svg) no-repeat;
+}
+
+.postagens h4 span {
+    display: block;
+    font-size: 14px;
+    color: #6F8FA6;
+     font-family: 'Roboto', sans-serif;
+}
+
+
+.postagens h5{
+    font-size: 12px;
+    color: #6F8FA6;
+    margin-bottom: 20px;
+}
+.postagens h5 span {
+    display: block;
+    font-size: 14px;
+    line-height: 150%;
+    color: #131C23;
+     font-family: 'Roboto', sans-serif;
+}
+
+.cmtr{
+    margin-top:30px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.cmtr a{
+    color: #6F8FA6;
+}
+
+.rounded{
+    border-radius: 8px !important;
+}
+.shadow {
+   box-shadow: 0px 14px 28px rgba(111, 143, 166, 0.08) !important;
+}
+
+.user-detalhe {
+    position: absolute;
+    right: 40px;
+    top: 46px;
+    font-size: 14px;
+    color: #6F8FA6;
+}
+.user-detalhe a{ color: #6F8FA6; }
+
+.bg-alimentacao{
+    border-left: 4px solid #EFA765;
+}
+
+.bg-sono{
+    border-left: 4px solid #6DBED8;
+}
+
+footer{
+    padding-top: 20px;
+    background: #131C23;
+    color: #6F8FA6;
+    font-size: 14px;
+    padding-bottom: 60px;
+}
+
+footer .idv{
+    margin-bottom:30px;
+}
+
+footer a:hover{
+    color: #6F8FA6;
+    text-decoration: none;
+}
+.tp-footer{
+    margin-top:5px;
+}
+
+footer p.text-end{
+    margin-top:11px;
+}
+
+.bt-plus{
+    position: relative;
+    background-color: rgba(111,143,166,0.1);
+    color: #6F8FA6;
+    padding: 16px 16px 16px 48px;
+    border-radius: 6px;
+}
+
+a.bt-plus:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background: url(../../img/cloud-crossed.svg) no-repeat;
 }
