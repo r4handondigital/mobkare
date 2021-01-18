@@ -444,3 +444,119 @@ a.bt-plus:before{
     height: 24px;
     background: url(../../img/cloud-crossed.svg) no-repeat;
 }
+
+.imagens-post{
+    width: 100%;
+    display: block;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.lupa-plus{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 40;
+}
+.inf-galeria{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    padding: 12px 5px 5px 68px;
+    margin: 0;
+}
+.inf-galeria{
+   z-index: 40;
+    color: #fff;
+    font-size: 14px;
+    
+}
+.inf-galeria img{
+border-radius: 10px;
+     width: 20px;
+    height: 20px;
+}
+.inf-galeria span{
+    display: block;
+    line-height: 32px;
+}
+
+.inf-galeria a{
+    color: #fff;
+}
+
+.inf-galeria:before{
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: url(../../img/ico-galer.svg) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background-size: cover;
+}
+.degrade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(57,66,73);
+background: linear-gradient(0deg, rgba(57,66,73,0.6) 0%, rgba(111,143,166,0.19) 100%);
+}
+
+.titulo{
+    display: inline-block;
+    background: rgba(111, 143, 166, 0.5);
+    color: #fff;
+    font-size: 28px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 35px;
+}
+
+.detalhe-topo{
+     background: rgba(111, 143, 166, 0.5);
+     border-radius: 9px;
+     float: right;
+     color: #fff;
+     margin: 20px 24px 24px 24px;
+     padding: 10px 15px 1px 15px;
+}
+
+.detalhe-topo img{
+    width: 50px;
+    display:inline-block;
+    margin-right:20px;
+    height: 50px;
+    border-radius:8px;
+    position: relative;
+    top: -14px;
+}
+.detalhe-topo h2{
+    font-size:28px;
+    display:inline-block;
+}
+
+.detalhe-topo h2 span{
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+    display:block;
+    position:relative;
+    padding-top: 4px;
+}
+.detalhe-topo h2 span:before{
+    content:'';
+    width:100%;
+    height:1px;
+    opacity: 0.2;
+    border: 1px solid #FFFFFF;
+    display:block;
+    top: 0;
+    position: absolute;
+}
+#esp-galeria{
+    margin-top:40px;
+}
