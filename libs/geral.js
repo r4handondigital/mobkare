@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 
-var nav = $('.topo');
+/*var nav = $('.topo');
     
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
@@ -10,6 +10,7 @@ var nav = $('.topo');
         } else {
             nav.removeClass("f-nav");
         }
-    });
+    });*/
 
 });
+

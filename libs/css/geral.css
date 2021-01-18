@@ -560,3 +560,298 @@ background: linear-gradient(0deg, rgba(57,66,73,0.6) 0%, rgba(111,143,166,0.19) 
 #esp-galeria{
     margin-top:40px;
 }
+
+::-webkit-input-placeholder  { color: #6F8FA6 !important; text-decoration: underline; }
+input:-moz-placeholder { color: #6F8FA6 !important; text-decoration: underline;}
+textarea:-moz-placeholder { color: #6F8FA6 !important; text-decoration: underline;}
+
+/* CHAT */
+
+.messaging img{ max-width:100%;}
+.inbox_people {
+   
+    float: left;
+    overflow: hidden;
+    width: 30%;
+   
+    padding-left: 32px;
+}
+
+.stylish-input-group{
+    position: relative;
+}
+.inbox_msg {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.top_spac{ margin: 20px 0 0;}
+
+
+.recent_heading {float: left; width:40%;}
+.srch_bar {
+  display: inline-block;
+  
+  width: 100%; 
+}
+.headind_srch {
+    padding: 5px 8px 8px 0;
+    overflow: hidden;
+}
+
+.chat_ib h5{
+     font-family: 'Roboto', sans-serif;
+}
+
+.recent_heading h4 {
+  color: #05728f;
+  font-size: 21px;
+  margin: auto;
+}
+.srch_bar input{ 
+        background: rgba(111, 143, 166, 0.1);
+    border-radius: 6px;
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 14px;
+    height: 52px;
+    border: 0;
+    margin-top:5px;
+
+ }
+.srch_bar .input-group-addon button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  padding: 0;
+  color: #707070;
+  font-size: 18px;
+}
+.srch_bar .input-group-addon { margin:0; position: absolute; top: 11px;
+right: 11px;}
+
+.chat_ib h5{font-size:16px;color:#6F8FA6;margin:0 0 8px 0;font-weight: bold;margin-bottom: 0;}
+.chat_ib h5 span{ float: right;
+    margin-top: 9px;}
+.chat_ib p{ font-size:14px; color:#6F8FA6; margin:auto}
+.chat_img {
+  float: left;
+  width: 11%;
+}
+.chat_ib {
+  float: left;
+  width: 88%;
+}
+
+.chat_people{ overflow:hidden; clear:both;}
+.chat_list {
+  border-top: 1px solid #dde4ea;
+  margin: 0 9px 0 0;
+  padding: 23px 16px 19px;
+}
+.inbox_chat { /*height: 550px; overflow-y: scroll;*/}
+
+.active_chat{background: #fff;}
+
+.incoming_msg_img {
+  display: inline-block;
+  width: 6%;
+}
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 92%;
+ }
+ .received_withd_msg p {
+  color: #131C23;
+  font-size: 14px;
+  margin: 0;
+ 
+  width: 100%;
+}
+.time_date {
+  color: #6F8FA6;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+.received_withd_msg { width: 57%;
+background: #EAEEF3;
+padding:20px;
+border-radius: 0px 13px 13px 13px;}
+.mesgs {
+  float: left;
+  padding: 30px 15px 0 25px;
+  width: 70%;
+  border-left: 3px solid #dde4ea;
+}
+
+ .sent_msg p {
+ 
+  font-size: 14px;
+  margin: 0; 
+  color: #131C23;
+  width:100%;
+}
+.outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+.sent_msg {
+  float: right;
+  width: 46%;
+  padding:20px;
+  background: #FFFFFF;
+border-radius: 13px 0px 13px 13px;
+}
+.input_msg_write input {
+    height: 90px;
+  background: #FFFFFF;
+ /* Light Shadow */
+box-shadow: 0px 8px 14px rgba(13, 85, 141, 0.2);
+border-radius: 6px;
+  border: 0;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+}
+
+.type_msg {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+}
+.msg_send_btn {
+ position: absolute;
+    right: 12px;
+    top: 18px;
+    border: 0;
+    background: none;
+  }
+.messaging { padding: 0 0 50px 0;}
+.msg_history {
+  height: 516px;
+  overflow-y: auto;
+}
+
+#informacoes-chat .chat_img{
+    width: auto;
+    margin-right: 10px;
+    margin-left:12px;
+}
+
+#informacoes-chat{
+    margin-bottom:20px;
+}
+
+/* BARRA DE ROLAGEM*/
+
+#demo {
+  position: relative;
+  
+}
+
+.scrollbar {
+margin-left: 30px;
+float: left;
+height: 300px;
+width: 65px;
+background: #fff;
+overflow-y: scroll;
+margin-bottom: 25px;
+}
+.force-overflow {
+min-height: 450px;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #4285F4; }
+
+.scrollbar-danger::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-danger::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-danger::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #ff3547; }
+
+.scrollbar-warning::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-warning::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-warning::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #FF8800; }
+
+.scrollbar-success::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-success::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-success::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #00C851; }
+
+.scrollbar-info::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-info::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-info::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #33b5e5; }
+
+.scrollbar-default::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-default::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-default::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #2BBBAD; }
+
+.scrollbar-secondary::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px; }
+
+.scrollbar-secondary::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; }
+
+.scrollbar-secondary::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #aa66cc; }
