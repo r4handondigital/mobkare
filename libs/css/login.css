@@ -1,0 +1,126 @@
+.group-form{
+  height: 100%;
+}
+
+#bloco-busca {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+
+.fw-normal{
+  color: #181C32;
+  font-size: 26px;
+}
+
+.fw-normal span {
+    display: block;
+    font-size: 18px;
+    color: #B5B5C3;
+    margin-top: 0.8rem;
+}
+
+.fw-normal span a{
+   color: #3699FF;
+   text-decoration: none;
+}
+
+.mb-4 {
+    margin-bottom: 4.5rem!important;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 375px;
+  padding: 0;
+  margin: auto;
+}
+
+.form-signin label{
+  text-align: left !important;
+  font-size: 12px;
+  width: 100%;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: 58px;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+
+  margin-bottom: 2rem;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+ 
+}
+#blc-senha{
+  position: relative;
+}
+#blc-senha span{
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+}
+#blc-senha span a{
+  color: #131C23;
+
+}
+.form-signin .btn{
+  margin-top:2rem;
+  font-size: 15px;
+  width: 107px;
+  height: 50px;
+}
+
+.lg-top{
+  width: 100%;
+  top: 10%;
+  left: 0;
+  position: absolute;
+}
+.marca-rodape{
+  bottom: 6%;
+  position: absolute;
+  left: 0;
+  width: 100%
+}
+
+@media only screen and  (max-width:768px){
+
+  #login-bg{
+    display: none !important;
+  }
+
+  .marca-rodape {
+    bottom: 0;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.lg-top {
+    width: 100%;
+    margin-top: 5%;
+    left: 0;
+    position: relative;
+    margin-bottom: 5%;
+}
+}
