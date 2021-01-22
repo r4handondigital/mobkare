@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
 
+
 /*var nav = $('.topo');
     
     $(window).scroll(function () {
@@ -12,5 +13,15 @@ $(document).ready(function(){
         }
     });*/
 
+
+    
+
 });
 
+function openNav() {
+  document.getElementById("mySidenav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.height = "0";
+}
