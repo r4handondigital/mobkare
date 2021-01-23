@@ -621,8 +621,16 @@ background: linear-gradient(0deg, rgba(57,66,73,0.6) 0%, rgba(111,143,166,0.19) 
     margin-top:40px;
 }
 
+
+
 ::-webkit-input-placeholder  { color: #6F8FA6 !important; text-decoration: underline; }
 input:-moz-placeholder { color: #6F8FA6 !important; text-decoration: underline;}
+
+
+::-webkit-input-placeholder  { color: #6F8FA6 !important;  }
+#data-modal:-moz-placeholder { color: #6F8FA6 !important; }
+
+
 textarea:-moz-placeholder { color: #6F8FA6 !important; text-decoration: underline;}
 
 /* CHAT */
@@ -637,6 +645,9 @@ textarea:-moz-placeholder { color: #6F8FA6 !important; text-decoration: underlin
     padding-left: 32px;
 }
 
+#data-modal{
+    background:url(../../img/calendar.svg) no-repeat 95% 17px;
+}
 .stylish-input-group{
     position: relative;
 }
@@ -806,7 +817,7 @@ border-radius: 6px;
 /* ROTINAS */
 
 .bt-rotina{
-    cursor: pointer;
+    
     position: relative;
     width: 160px;
     height: 162px;
@@ -820,6 +831,28 @@ border-radius: 6px;
     color: #6F8FA6;
     text-decoration: underline;
     font-size: 14px;
+}
+.rt-alimentacao{
+    cursor: pointer;
+}
+
+.miolo-pao{
+    margin: 2px;
+    padding: 11px 19px;
+}
+.fit-um{
+    background:url(../../img/ion_chevron-back-circle.svg) no-repeat left center;
+    padding-left: 27px !important;
+}
+
+.miolo-pao li{
+    display: inline;
+    font-size:14px;
+    padding: 5px 3px;
+}
+
+.miolo-pao li a{
+    color: #6F8FA6;
 }
 
 .bt-rotina:before{
@@ -991,6 +1024,14 @@ min-height: 450px;
   .sidenav a {font-size: 18px;}
 }
 
+
+@media screen and (max-height: 800px) {
+  .inferior-barra{
+    position: relative !important;
+  }
+}
+
+
 .top-modal{
     color: #131C23;
     font-size: 28px;
@@ -1019,4 +1060,158 @@ min-height: 450px;
 }
 .sessao-modal{
     width: 565px;
+}
+
+.inferior-barra{
+    position:  absolute;
+    width: 100%;
+    background:#F8F9FB;
+    height: 114px;
+    bottom: 0;
+    padding-top:35px;
+    left: 0;
+    border-top:2px solid #e2e9ed;
+}
+.inferior-barra button{
+    font-size: 18px;
+}
+
+.inferior-barra .btn-link{
+    color:#6F8FA6 ;
+    font-size: 14px;
+}
+
+.btn-success {
+    background-color: #67CC78;
+    border-color: #67CC78;
+    height: 58px;
+}
+
+.btn-success img{
+    margin-right:5px;
+}
+
+.sessao-modal label{
+    font-size: 12px;
+    display: block;
+    font-weight: bold;
+    color: #131C23;
+}
+.sessao-modal label span{
+    font-weight: normal;
+}
+.inf-md-topo{
+    margin-bottom: 30px;
+}
+.esp-forms{
+    margin-bottom: 30px;
+}
+
+.form-control,.form-select-lg{
+    min-height: 58px;
+        border: 1px solid #e2e9ed;
+        color: #6F8FA6;
+        font-size: 14px !important;
+}
+
+.form-select{
+    font-size: 14px !important;
+}
+.form-check-label{
+   color: #6F8FA6 !important;
+    text-decoration: underline;
+    font-weight: normal !important;
+    margin-left: 8px;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+
+.form-check-input{
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    border: 1px solid #c5d2db;
+}
+.form-check-input:checked[type=radio] {
+    background: url(../../img/ic-check.svg) no-repeat center;
+    border-color: #c5d2db;
+}
+
+
+/*Bootstrap Calendar*/
+.datepicker {
+    border-radius: 0;
+    padding: 0;
+}
+.datepicker-days table thead, .datepicker-days table tbody, .datepicker-days table tfoot {
+    padding: 10px;
+    display: list-item;
+}
+.datepicker-days table thead, .datepicker-months table thead, .datepicker-years table thead, .datepicker-decades table thead, .datepicker-centuries table thead {
+    background: #67CC78;
+    color: #ffffff;
+    border-radius: 0;
+}
+.datepicker-days table thead tr:nth-child(2n+0) td, .datepicker-days table thead tr:nth-child(2n+0) th {
+    border-radius: 3px;
+}
+.datepicker-days table thead tr:nth-child(3n+0) {
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.table-condensed > tbody > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > thead > tr > th {
+    padding: 11px 13px;
+}
+.datepicker-months table thead td, .datepicker-months table thead th, .datepicker-years table thead td, .datepicker-years table thead th, .datepicker-decades table thead td, .datepicker-decades table thead th, .datepicker-centuries table thead td, .datepicker-centuries table thead th {
+    border-radius: 0;
+}
+.datepicker td, .datepicker th {
+    border-radius: 50%;
+    padding: 0 12px;
+}
+.datepicker-days table thead, .datepicker-months table thead, .datepicker-years table thead, .datepicker-decades table thead, .datepicker-centuries table thead {
+    background: #67CC78;
+    color: #ffffff;
+    border-radius: 0;
+}
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {
+    background-image: none;
+}
+.datepicker .prev, .datepicker .next {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    width: 37px;
+    height: 37px;
+}
+.datepicker .prev:hover, .datepicker .next:hover {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.99);
+    font-size: 21px;
+}
+.datepicker .datepicker-switch {
+    font-size: 24px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.datepicker .datepicker-switch:hover {
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+}
+.datepicker table tr td span {
+    border-radius: 2px;
+    margin: 3%;
+    width: 27%;
+}
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover {
+  background-color: #67CC78;
+  background-image: none;
+}
+.dropdown-menu {
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.datepicker-dropdown.datepicker-orient-top:before {
+    border-top: 7px solid rgba(0,0,0,.1);
 }
