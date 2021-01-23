@@ -1063,7 +1063,7 @@ min-height: 450px;
 }
 
 .inferior-barra{
-    position:  absolute;
+    /*position:  absolute;*/
     width: 100%;
     background:#F8F9FB;
     height: 114px;
