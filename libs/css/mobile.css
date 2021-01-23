@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+  
+	.navegacao-topo{
+		display: none;
+	}
+
+
+
+	#logo-cliente {
+	    margin: 24px 0;
+	    display: block;
+	}
+
+	#logo-cliente img{
+		width: 50%;
+	}
+
+	.remote-ico {
+	    margin: 0;
+	    position: absolute;
+	    
+	    right: 8px;
+	    top: 25px;
+	}
+
+	.titulo {
+	    display: inline-block;
+	    background: rgba(111, 143, 166, 0.5);
+	    color: #fff;
+	    font-size: 1rem;
+	    padding: 12px 15px;
+	    border-radius: 6px;
+	    margin: 18px 0;
+	}
+
+	.detalhe-topo img{
+		display: none;
+	}
+
+	.detalhe-topo {
+	    background: rgba(111, 143, 166, 0.5);
+	    border-radius: 9px;
+	    float: right;
+	    color: #fff;
+	    margin: 20px 0 24px 0px;
+	    padding: 10px 15px 1px 15px;
+	}
+
+	.detalhe-topo h2 {
+    font-size: 1rem;
+    display: inline-block;
+		}
+
+	.bt-personalizar{
+		display: none;
+	}
+
+	.bt-rotina{
+		margin:10px;
+	}
+
+	.sessao-modal{
+		max-width: 565px;
+		width: 100%;
+	}
+
+	.inf-md-topo .col-sm-12{
+		text-align: center;
+	}
+
+	.descritivo-paciente p{
+		text-align: center;
+	}
+	.descritivo-paciente p strong{
+		display: block;
+	}
+
+	.esp-forms{
+		padding:0 15px;
+	}
+	#mobile-sep{
+		margin-top: 30px;
+	}
+}
