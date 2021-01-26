@@ -41,7 +41,7 @@
                     <a class="ativo" href=""><img src="img/home.svg" width="24" height="24"><span>Home</span></a>
                   </li>
                   <li>
-                    <a href=""><img src="img/visitar.svg" width="24" height="24"><span>Visitar</span></a>
+                    <a class="pnt-digital" onclick="openPontodigital()"><img src="img/ico-ponto-digital.svg" width="24" height="24" ><span>Ponto digital</span></a>
                   </li>
                   <li class="alert-msg">
                     <a href=""><img src="img/mensagens.svg" width="24" height="24"><span>Mensagens</span></a>
@@ -74,7 +74,7 @@
 
                 <div class="col-6">
                     <div class="detalhe-topo">
-                      <img src="img/dad.png">
+                      <img src="img/dad.png" class="use-sobre" onclick="openSobre()">
                       <h2>Sr. Augusto Coimbra <span>Alguma descrição</span></h2>
                     </div>
                 </div>
@@ -101,7 +101,18 @@
     </section>
     <section id="conteudo">
         <div class="container sessao-rotina">
-        
+
+            <div class="row obs-limitacoes" >
+              <div class="col-12">
+                <h6>LIMITAÇÕES DO SR. AUGUSTO C.</h6>
+
+                <ul class="lit-alert">
+                  <li>Lactose</li>
+                  <li>Mobilidade reduzida</li>
+                  <li>Mobilidade reduzida</li>
+                </ul>
+              </div>
+            </div>
             <div class="row">
 
                 <div class="col-12">
@@ -125,7 +136,70 @@
         </div>
     </section>
 
+<!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 
+
+MODAIS
+
+8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+-->
+
+<!-- SOBRE -->
+<div id="mySidenavSobre" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeSobre()"><img src="img/close.svg" width="46" height="46"></a>
+  <h1 class="top-modal">Sobre</h1>
+
+    <div class="container sessao-modal">
+      
+        <div class="row">
+            <div class="col-12 text-center" id="detalhe-usuario">
+              <img src="img/augusto-sobre.jpg">
+                <h1>Sr. Augusto C. <span>89 anos</span></h1>
+            </div>
+        </div><!--.row -->
+
+        <div class="row obs-limitacoes" >
+              <div class="col-12 text-center">
+                <h6>LIMITAÇÕES DO SR. AUGUSTO C.</h6>
+
+                <ul class="lit-alert">
+                  <li>Lactose</li>
+                  <li>Mobilidade reduzida</li>
+                  <li>Mobilidade reduzida</li>
+                </ul>
+              </div>
+        </div> <!--.row -->
+      
+      
+    </div><!--.container-->
+
+    <div class="container">
+         <div class="row">
+          <div class="col-12">
+              <table class="tabela-sobre">
+                <tr>
+                  <td><h6>NUTRIÇÃO</h6><p>D2</p></td>
+                  <td><h6>MEDICAMENTOS</h6><p>Medicamentos 01, Medicamentos 02</p></td>
+                  <td><h6>OUTRAS OBSERVAÇÕES</h6><p>Sem informação</p></td>
+                </tr>
+              </table>
+          </div>
+        </div>
+    </div><!--.container-->
+
+
+    <div class="container sessao-modal">
+        <div class="row">
+            <div class="col-12 text-center detalhes-sobre">
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+    </div><!--.container-->
+
    
+</div><!--.sidenav-->
+
+
+<!-- ALIMENTAÇÃO -->   
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/close.svg" width="46" height="46"></a>
   <h1 class="top-modal">Alimentação</h1>
@@ -181,6 +255,70 @@
               </div>
           </div>
         </div>
+        <div class="row esp-forms">
+          <div class="col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">OBSERVAÇÕES <span>(OPCIONAL)</span></label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+        </div>
+         
+        
+      
+    </div><!--.container-->
+     <section class="inferior-barra">
+            <div class="container sessao-modal">
+                <div class="row">
+                  <div class="col-12 text-end">
+                    <button type="button" class="btn btn-success btn-lg"><img src="img/check-confirm.svg" width="30" height="30">Confirmar</button>
+                    <button type="button" class="btn btn-link btn-lg">Cancelar</button>
+                  </div>
+                </div>
+            </div>
+    </section>
+  </form>
+</div>
+
+
+<!-- PONTO DIGITAL -->
+
+
+<div id="mySidenavPonto" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closePontodigital()"><img src="img/close.svg" width="46" height="46"></a>
+  <h1 class="top-modal">Ponto Digital</h1>
+  <form class="row g-2">
+    <div class="container sessao-modal">
+      <div class="row inf-md-topo" >
+         <div class="col-sm-12 col-md-4">
+            <img src="img/rafiki.png" class="img-fluid">
+         </div>
+         <div class="col-sm-12 col-md-8">
+            <div class="info-paciente position-relative">
+              <div class="descritivo-paciente">
+                  <h3>Entrada dia 14/01/2021</h3>
+                  <p>Lembre-se de ativar sua localização</p>
+              </div>
+            </div>
+         </div> 
+      </div>
+      
+        <div class="row esp-forms">
+          <div class="col-sm-12">
+              <label for="data-modal" class="form-label">SUA LOCALIZAÇÃO APROXIMADA <span>(Raio de 20 metros)</span></label>
+             <img src="img/alert.png" class="img-fluid">
+           </div>
+          
+        </div>
+        <div class="row esp-forms">    
+          
+        
+         <div class="col-sm-12" id="mobile-sep">
+              <label for="input-horario" class="form-label">HORÁRIO DA ENTRADA</label>
+              <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" class="form-control form-control-lg" placeholder="11:28" >
+        <span class="min-hor">Horário automático com base em sua localização (Lisbon UTC+0)</span>
+           </div> 
+
+           </div>
         <div class="row esp-forms">
           <div class="col-12">
               <label for="exampleFormControlTextarea1" class="form-label">OBSERVAÇÕES <span>(OPCIONAL)</span></label>

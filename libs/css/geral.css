@@ -1053,6 +1053,11 @@ min-height: 450px;
     font-size: 14px;
 }
 
+.info-paciente h3{
+    color: #131C23;
+    font-size: 22px;
+}
+
 .descritivo-paciente{
     vertical-align: middle;
     display: table-cell;
@@ -1079,6 +1084,11 @@ min-height: 450px;
 .inferior-barra .btn-link{
     color:#6F8FA6 ;
     font-size: 14px;
+}
+
+.min-hor{
+    font-size: 12px;
+    font-style: italic;
 }
 
 .btn-success {
@@ -1214,4 +1224,69 @@ min-height: 450px;
 }
 .datepicker-dropdown.datepicker-orient-top:before {
     border-top: 7px solid rgba(0,0,0,.1);
+}
+
+
+.obs-limitacoes h6{
+    font-size:12px;
+    margin-left:30px;
+}
+
+.lit-alert{
+    list-style-type: none;
+    margin:0;
+    padding: 0 0 0 23px;
+}
+
+.lit-alert li{
+    display: inline-block;
+    background:#FFF3F1;
+    padding: 14px 18px;
+    border-radius: 6px;
+    border: 2px solid #FFDDDD;
+    color: #A56C6C;
+    font-weight: bold;
+    margin-right: 7px;
+    font-size: 14px;
+}
+
+.use-sobre{
+    cursor: pointer;
+}
+
+#detalhe-usuario h1{
+   font-size: 38px;
+    color: #131C23;
+    margin-top: 20px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+#detalhe-usuario h1 span{
+    display: block;
+    font-size:14px;
+    color: #6F8FA6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.tabela-sobre{
+    width: 100%;
+    margin: 30px 0;
+    
+    border-top:2px solid #e2e9ed;
+    border-bottom:2px solid #e2e9ed; 
+}
+
+.tabela-sobre td{
+    padding-top:20px;
+}
+.tabela-sobre td p{
+    color: #131C23;
+}
+
+.detalhes-sobre{
+    color: #131C23;
+}
+
+.pnt-digital{
+    cursor: pointer;
 }
