@@ -1290,3 +1290,173 @@ min-height: 450px;
 .pnt-digital{
     cursor: pointer;
 }
+.sessao-tarefas{
+    max-width: 950px;
+}
+
+.conteudo-tarefas{
+    margin-top:50px;
+}
+.conteudo-tarefas h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.conteudo-tarefas h3 span{
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #131C23;
+}
+
+tbody, td, tfoot, th, thead{
+    border:0 !important;
+}
+
+
+tr{
+    border-bottom: 1px solid #eaeef2;
+}
+.table{
+    margin-bottom: 100px;
+}
+.table thead{
+    background: #eaeef2;
+    color: #6F8FA6;
+    font-size: 12px;    
+    text-transform: uppercase;
+}
+.table thead th{
+    border-radius: 6px;
+    padding:20px;
+}
+
+.table td {
+    padding: 20px 0px 20px 20px;
+}
+
+.hora-tarefa{
+        background: #eaeef2 url(../../img/time-ico.svg) no-repeat 7px center;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 12px 10px 11px 29px;
+}
+
+.tarefa-utente img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 6px;
+}
+
+.tarefa-utente h4{
+    font-size: 14px;
+    padding-top:5px;
+}
+
+.tarefa-utente h4 span{
+    display: block;
+    color: #6F8FA6;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+}
+.hora-tipo{
+    padding: 15px 13px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.almoco-trf{
+    background:#f6e9dd;
+    color: #131C23;
+}
+
+.btn-primary {
+    background: #0D86DD url(../../img/ico-visible.svg) no-repeat 5px center;
+    font-size: 14px;
+    padding: 13px 12px 13px 29px;
+    text-decoration: underline;
+    color: #fff;
+    border-color: #0D86DD;
+    border-radius: 6px;
+}
+.higiene-trf{
+    background:#f2dded;
+}
+.sono-trf{
+    background:#e2f2f7;
+}
+.medicamentos-trf{
+    background:#e2f7ed;
+}
+
+.atividades-trf{
+    background:#f0e2f7;
+}
+
+.urgentes-trf{
+    background:#ffdfdb;
+}
+
+.saude-trf{
+    background:#ffdfdb;
+}
+
+.info-localizacao{
+    text-decoration: underline;
+    font-size: 12px;
+    color: #459A4E;
+    background: #ebfaed;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.info-localizacao .dropdown-menu{
+    padding:20px;
+    border:0;
+    box-shadow: 0px 7px 14px rgba(111, 143, 166, 0.12);
+border-radius: 6px;
+min-width: 220px;
+}
+
+.info-localizacao .dropdown-menu h4{
+    color: #6F8FA6;
+    font-size:12px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.dropdown-divider {
+     border-top: 1px solid #EAEEF3;
+}
+
+.info-localizacao .dropdown-menu li{
+    font-size:14px;
+    
+    font-weight:300;
+}
+
+.info-localizacao .dropdown-menu li a{
+    text-decoration: underline;
+}
+.start-loc{
+    background: url(../../img/star-localizacao.svg) no-repeat left center;
+        padding-bottom: 5px;
+}
+
+.end-loc{
+    background: url(../../img/end-localizacao.svg) no-repeat left center;
+}
+
+.start-loc,.end-loc{
+    padding-left:15px
+    ;
+}
+.info-localizacao .dropdown-menu li:last-child{
+    margin-top:15px;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="theme-color" content="#ff9224">
+    <link rel="shortcut icon" href="favicon.ico"/>
+      <meta name="description" content="It´s always time to care">
+     <meta property="og:title" content="Mob Kare">
+     <meta property="og:description" content="It´s always time to care">
+    <meta property="og:image" itemprop="image" content="" >
+   
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">       
+    <link rel="stylesheet" type="text/css" href="libs/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/geral.css">
+
+    <link rel="stylesheet" type="text/css" href="libs/css/mobile.css">
+    <title>Mob Kare - Minhas Tarefas</title> 
+
+ 
+
+<script src="https://kit.fontawesome.com/41ffd3bf67.js" crossorigin="anonymous"></script>
+
+</head>
+
+  <body>
+    <header>
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="" id="logo-cliente"><img src="img/logo.png"></a>
+            </div>
+            <div class="col-md-4">
+                <ul class="navegacao-topo">
+                  <li>
+                    <a class="ativo" href=""><img src="img/home.svg" width="24" height="24"><span>Home</span></a>
+                  </li>
+                  <li>
+                    <a class="pnt-digital" onclick="openPontodigital()"><img src="img/ico-ponto-digital.svg" width="24" height="24" ><span>Ponto digital</span></a>
+                  </li>
+                  <li class="alert-msg">
+                    <a href=""><img src="img/mensagens.svg" width="24" height="24"><span>Mensagens</span></a>
+                  </li>
+
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="remote-ico dropdown text-end">
+                  <button class="dropblack dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><img src="img/personal.png"></span>Filipa Coimbra
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">Minhas configurações</a></li>
+                    <li><a class="dropdown-item" href="#">Trocar utente</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="exit-ic"><a class="dropdown-item" href="#">Sair</a></li>
+                  </ul>
+                </div>
+            </div><!--.col-md-4-->
+        </div>
+      </div>
+    </header>
+    <section class="imagem-topo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="titulo">Minhas tarefas</h1>
+                </div>
+
+                <div class="col-6">
+                    <a href="#" class="bt-personalizar text-end">Personalizar</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="miolo-pao">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <ul class="miolo-pao">
+              <li class="fit-um">
+                <a href="#">Meu dashboard</a>
+              </li>
+              <li class="spc">/</li>
+              <li>
+                Minhas tarefas
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="conteudo">
+        <div class="container sessao-tarefas">
+
+           
+            <div class="row">
+              <div class="col-12">
+                <div class="conteudo-tarefas">
+                  <h3>Tarefas de hoje<span>14 de Janeiro de 2021 - <strong>4 tarefas no total, totalizando 5 horas e 30 minutos</strong></span></h3>
+                </div>
+                <div class="table-responsive">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                            <th>Hora</th>
+                            <th style="width: 30%">Utente</th>
+                            <th>Tipo</th>
+                            <th>Localização</th>
+                            <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="align-middle">
+                            <td>
+                              <span class="hora-tarefa">12:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo almoco-trf">Almoço</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+
+                 <div class="table-responsive">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                            <th>Hora</th>
+                            <th style="width: 30%">Utente</th>
+                            <th>Tipo</th>
+                            <th>Localização</th>
+                            <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="align-middle">
+                            <td>
+                              <span class="hora-tarefa">12:15 - 13:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo almoco-trf">Almoço</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+
+                           <tr class="align-middle">
+                            <td>
+                                      <!-- Default dropstart button -->
+                                    <div class="dropstart info-localizacao">
+                                      <span class="detx" data-bs-toggle="dropdown" aria-expanded="false">
+                                        +15
+                                      </span>
+                                      <ul class="dropdown-menu">
+                                        <li><h4>TEMPO DESLOCAMENTO EST.</h4></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="start-loc"><a href="">6391 Elgin St. Celina...</a></li>
+                                        <li class="end-loc"><a href="">Ash Dr. San Jose, S...</a></li>
+                                        <li><a href="">Ver no google maps</a></li>
+                                      </ul>
+                                    </div>
+
+
+
+                              <span class="hora-tarefa">12:15 - 14:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo higiene-trf">Higiene</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td>
+                              <span class="hora-tarefa">12:15 - 13:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo sono-trf">Sono</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+
+                          <tr class="align-middle">
+                            <td>
+                              <span class="hora-tarefa">12:15 - 13:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo medicamentos-trf">Medicamentos</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+
+                          <tr class="align-middle">
+                            <td>
+                              <span class="hora-tarefa">12:15 - 13:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo atividades-trf">Atividades</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+
+                          <tr class="align-middle">
+                            <td>
+                              <span class="hora-tarefa">12:15 - 13:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo saude-trf">Saúde</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td>
+                              <span class="hora-tarefa">12:15 - 13:15</span>
+                            </td>
+                            <td class="tarefa-utente"><img src="img/dad.png"><h4>Sr. Augusto Coimbra<span>#3229</span></h4></td>
+                            <td><span class="hora-tipo urgentes-trf">Urgentes</span></td>
+                            <td><a href="">6391 Elgin St. Celina...</a></td>
+                            <td class="text-end"><a href="" class="btn btn-primary"> Detalhes</a></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>  
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+     <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                  <p class="text-center"><img src="img/mob-kare-rodape.svg"></p>
+                </div>
+            </div>
+            <div class="idv"></div><!--. separador -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <p class="tp-footer">Direitos reservdos | uxwise.eu - V1.1</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <p class="text-end"><a href="" class="bt-plus">Reportar problema</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<!-- PONTO DIGITAL -->
+
+
+<div id="mySidenavPonto" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closePontodigital()"><img src="img/close.svg" width="46" height="46"></a>
+  <h1 class="top-modal">Ponto Digital</h1>
+  <form class="row g-2">
+    <div class="container sessao-modal">
+      <div class="row inf-md-topo" >
+         <div class="col-sm-12 col-md-4">
+            <img src="img/rafiki.png" class="img-fluid">
+         </div>
+         <div class="col-sm-12 col-md-8">
+            <div class="info-paciente position-relative">
+              <div class="descritivo-paciente">
+                  <h3>Entrada dia 14/01/2021</h3>
+                  <p>Lembre-se de ativar sua localização</p>
+              </div>
+            </div>
+         </div> 
+      </div>
+      
+        <div class="row esp-forms">
+          <div class="col-sm-12">
+              <label for="data-modal" class="form-label">SUA LOCALIZAÇÃO APROXIMADA <span>(Raio de 20 metros)</span></label>
+             <img src="img/alert.png" class="img-fluid">
+           </div>
+          
+        </div>
+        <div class="row esp-forms">    
+          
+        
+         <div class="col-sm-12" id="mobile-sep">
+              <label for="input-horario" class="form-label">HORÁRIO DA ENTRADA</label>
+              <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" class="form-control form-control-lg" placeholder="11:28" >
+        <span class="min-hor">Horário automático com base em sua localização (Lisbon UTC+0)</span>
+           </div> 
+
+           </div>
+        <div class="row esp-forms">
+          <div class="col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">OBSERVAÇÕES <span>(OPCIONAL)</span></label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+        </div>
+         
+        
+      
+    </div><!--.container-->
+     <section class="inferior-barra">
+            <div class="container sessao-modal">
+                <div class="row">
+                  <div class="col-12 text-end">
+                    <button type="button" class="btn btn-success btn-lg"><img src="img/check-confirm.svg" width="30" height="30">Confirmar</button>
+                    <button type="button" class="btn btn-link btn-lg">Cancelar</button>
+                  </div>
+                </div>
+            </div>
+    </section>
+  </form>
+</div>
+
+
+<script>
+
+</script>
+
+    <!-- JavaScript (Opcional) -->
+    <script type="text/javascript" src="libs/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-migrate-3.3.2.min.js"></script>
+    <script type="text/javascript" src="libs/lightbox/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+   <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+   
+    <script type="text/javascript" src="libs/geral.js"></script>
+  </body>
+</html>
