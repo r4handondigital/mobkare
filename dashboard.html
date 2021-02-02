@@ -69,9 +69,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6">
-                    <h1 class="titulo">Gerenciar rotinas</h1>
                 </div>
-
                 <div class="col-6">
                     <a href="#" class="bt-personalizar text-end">Personalizar</a>
                 </div>
@@ -79,58 +77,122 @@
             
         </div>
     </section>
-    <section id="miolo-pao">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <ul class="miolo-pao">
-              <li class="fit-um">
-                <a href="#">Meu Cadastro</a>
-              </li>
-              <li class="spc">/</li>
-              <li>
-                Gerenciar rotina
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section id="conteudo">
-        <div class="container sessao-rotina">
-
-            <div class="row obs-limitacoes" >
-              <div class="col-12">
-                <h6>LIMITAÇÕES DO SR. AUGUSTO C.</h6>
-
-                <ul class="lit-alert">
-                  <li>Lactose</li>
-                  <li>Mobilidade reduzida</li>
-                  <li>Mobilidade reduzida</li>
-                </ul>
+         <div class="container sessao-dashboard">
+              <div class="row inf-md-topo" >
+                 <div class="col-sm-12 col-md-5">
+                    <img src="img/pana.png" class="img-fluid">
+                 </div>
+                 <div class="col-sm-12 col-md-7">
+                    <div class="info-paciente position-relative">
+                      <div class="descritivo-paciente">
+                        <h1>Olá, Marina Loung</h1>
+                          <p>Você tem <strong><a href="">2 novas mensagens</a></strong> e o seu próximo evento será em 35 minutos com o utente <strong><a href="">Marcos A.</a></p>
+                      </div>
+                    </div>
+                 </div> 
               </div>
-            </div>
-            <div class="row">
+              
+              <div class="row meus-utentes-x">
 
-                <div class="col-12">
-                  
-                  <span class="bt-rotina rt-alimentacao" onclick="openNav()">Alimentação</span>
-                  <span class="bt-rotina rt-higiene">Higiene</span>
-                  <span class="bt-rotina rt-sono">Sono</span>
-                  <span class="bt-rotina rt-saude">Saúde</span>
-                  <span class="bt-rotina rt-medicamentos">Medicamentos</span>
-                  <span class="bt-rotina rt-atividades">Atividades</span>
-                  <span class="bt-rotina rt-mensagens">Mensagens</span>
-                  <span class="bt-rotina rt-outras">Outras</span>
-                  <span class="bt-rotina rt-rotinas-anteriores">Rotinas anteriores</span>
-                  <span class="bt-rotina rt-urgentes">Urgentes</span>
+                  <form class="busca-dash">
+                     <div class="mb-3 row">
+                        <label for="input-bsc-dash" class="col-sm-2 col-form-label">MEUS UTENTES</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="input-bsc-dash" placeholder="Buscar por nome">
+                        </div>
+                      </div>
+                  </form>
+                  <ul class="utnts-sessao-dash">
+                    <li class="ativo">
+                      <a href="">
+                        <img src="img/dad.png">
+                        <span>Sr. Augusto Coimbra</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="img/dad.png">
+                        <span>Sr. Augusto Coimbra</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="img/dad.png">
+                        <span>Sr. Augusto Coimbra</span>
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="">
+                        <img src="img/personal.png">
+                        <span>Sr. Augusto Coimbra</span>
+                      </a>
+                    </li>
+                  </ul>
+              </div><!--.row-->
 
+              <div class="row detalhes-escala">
+                  <div class="col-12">
+                      <h3 class="ico-msn">MINHA ESCALA SEMANAL</h3>
+                  </div>
+                  <div class="col-12">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <tr class="align-middle">
+                            <th><span>SEG - </span>25</th>
+                            <th><span>TER - </span>26</th>
+                            <th><span>QUA - </span>27</th>
+                            <th class="folga"><span>QUI - </span>28</th>
+                            <th><span>SEX - </span>29</th>
+                            <th><span>SÁB - </span>30</th>
+                            <th><span>DOM - </span>31</th>
+                          </tr>
+                          <tr class="align-middle">
+                            <td><a href="">07:00 - 16:00</a> <span>PISO 02</span></td>
+                            <td><a href="">07:00 - 16:00</a> <span>PISO 02</span></td>
+                            <td><a href="">07:00 - 16:00</a> <span>PISO 02</span></td>
+                            <td class="folga">OFF</td>
+                            <td><a href="">07:00 - 16:00</a> <span>PISO 02</span></td>
+                            <td><a href="">07:00 - 16:00</a> <span>PISO 02</span></td>
+                            <td><a href="">07:00 - 16:00</a> <span>PISO 02</span></td>
+                          </tr>
+                        </table>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-6">
+                    <h3 class="ico-msn">ÚLTIMAS MENSAGENS</h3>
+
+                    <ul class="lista-msg">
+                        <li>Albert Flores <strong>ontem às 17:23</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                        <li>Albert Flores <strong>ontem às 17:23</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                        <li>Albert Flores <strong>dia 02/01/2021 às 17:23</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                        <li>Albert Flores <strong>ontem às 17:23</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                    </ul>
+
+                    <a href="" class="btn-v-mais text-end">Ver todas</a>
                 </div>
 
-            </div><!--.row-->       
+                <div class="col-6">
+                    <h3 class="ico-trf">PRÓXIMAS TAREFAS</h3>
 
+                    <ul class="lista-msg">
+                        <li><strong>#01 Hoje às 12:30</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                        <li><strong>#02 Hoje às 12:30</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                        <li><strong>#03 Hoje às 12:30</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                        <li><strong>#04 Hoje às 12:30</strong> <a href="">Resultado do teste de COVID - Negativo</a></li>
+                    </ul>
 
-        </div>
+                    <a href="" class="btn-v-mais text-end">Ver todas</a>
+                </div>
+
+              </div><!--.row-->
+                    
+        </div><!--.container-->
     </section>
 
 <!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 
@@ -339,7 +401,24 @@ MODAIS
   </form>
 </div>
 
-
+<footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                  <p class="text-center"><img src="img/mob-kare-rodape.svg"></p>
+                </div>
+            </div>
+            <div class="idv"></div><!--. separador -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <p class="tp-footer">Direitos reservdos | uxwise.eu - V1.1</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <p class="text-end"><a href="" class="bt-plus">Reportar problema</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 <script>
 
 </script>

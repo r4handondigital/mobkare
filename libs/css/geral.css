@@ -1460,3 +1460,144 @@ min-width: 220px;
 .info-localizacao .dropdown-menu li:last-child{
     margin-top:15px;
 }
+
+.sessao-dashboard{
+    margin-top:60px;
+    margin-bottom: 90px;
+}
+
+.sessao-dashboard .descritivo-paciente h1{
+    color: #131C23;
+}
+
+.sessao-dashboard .descritivo-paciente a{
+    color: #6F8FA6; 
+}
+
+.meus-utentes-x{
+    border-top: 3px solid #dde4ea;
+
+    border-bottom: 3px solid #dde4ea;
+}
+.busca-dash .mb-3{
+  margin-bottom:0 !important;
+}
+.busca-dash label{
+    font-size:12px;
+    font-weight: 700;
+    padding-top:22px;
+}
+
+#input-bsc-dash{
+    background: transparent url(../../img/ico-pesquisa.svg) no-repeat center left;
+    border:0;
+    padding-left:25px;
+}
+
+.utnts-sessao-dash li{
+    display: inline-block;
+    text-align: center;
+    background: url(../../img/linha.png) no-repeat center right;
+    padding: 4px 17px;
+}
+
+.utnts-sessao-dash li:last-child{
+    background: none;
+}
+
+.utnts-sessao-dash li.ativo a{
+   
+}
+
+.utnts-sessao-dash li a{
+    display: table;
+}
+
+.utnts-sessao-dash li a span{
+    display: block;
+    font-size:14px;
+    font-weight:normal;
+    color: #6F8FA6;
+}
+.utnts-sessao-dash li img{
+    width: 58px;
+    height: 58px;
+    border-radius: 6px;
+}
+
+.detalhes-escala{
+    border-bottom: 3px solid #dde4ea;
+    margin-bottom: 25px;
+}
+.detalhes-escala table{
+  font-size:12px;
+  margin-bottom: 40px;
+  border-color: transparent;
+}
+.detalhes-escala table th{
+  background:#defae0;
+  border-radius: 6px;
+  text-align: center;
+  width: 14.2%;
+  padding: 18px;
+  color: #6f8fa6;
+  font-weight: normal;
+}
+.lista-msg{
+  padding:0;
+  list-style-type:none;
+  border-bottom: 3px solid #dde4ea;
+  margin-bottom: 30px;
+}
+.lista-msg li{
+ font-weight:normal;
+ color:#131C23;
+}
+.lista-msg li a{
+  display:block;
+  color:#6F8FA6;
+}
+.lista-msg li{
+  margin-bottom: 28px;
+}
+.detalhes-escala table td{
+  text-align: center;
+  width: 14.2%;
+  font-weight:normal;
+  padding: 15px 0;
+}
+.detalhes-escala table td.folga{color: #6f8fa6;
+font-weight:bold;}
+.detalhes-escala table td span{
+  font-weight:700;
+  display:block;
+  margin-top:5px;
+}
+.detalhes-escala table th.folga{
+  background:#cfe2f0;
+}
+.detalhes-escala table th span{
+  font-weight:700;
+}
+.ico-msn{
+    font-size: 12px;
+    background:url(../../img/mensagens.svg) no-repeat left center;
+    padding: 33px 32px 27px 32px;
+    font-weight: 700;
+}
+.btn-v-mais{
+    background:#eaeef2;
+    border-radius: 6px;
+    text-decoration: underline;
+    color: #6F8FA6;
+    padding: 13px 17px;
+    float: right;
+    font-weight: normal;
+}
+
+.ico-trf{
+    font-size: 12px;
+    background:url(../../img/tarefa-ico.svg) no-repeat left center;
+    padding: 33px 32px 27px 32px;
+    font-weight: 700;
+}
