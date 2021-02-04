@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+  /*$(".mn_sub").click(function(){
+    $("a").toggleClass("ativado");
+  });*/
 
 	$('#data-modal').datepicker({
 	    format: 'mm/dd/yyyy',

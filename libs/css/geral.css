@@ -23,6 +23,7 @@ button:focus {
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 h1{
@@ -1601,3 +1602,112 @@ font-weight:bold;}
     padding: 33px 32px 27px 32px;
     font-weight: 700;
 }
+
+#bg-menu {
+   background:#f8f9fb;
+    z-index: 1000;
+    padding-top: 20px;
+    height: calc(100vh - 4rem);
+}
+.sessao-admin{
+    background:#fff;
+}
+
+/*MENU*/
+#Menu{
+  display: block;
+  padding: 35px 30px 30px 30%;
+}
+
+
+#Menu a {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    font-weight: 400;
+    color: #455A64;
+    text-decoration: none;
+    border-bottom: 1px solid #DDE4EA;
+    font-size: 16px;
+    position: relative;
+    padding: 17px 0;
+}
+
+
+a.mn_sub::before {
+    content: '';
+    background: url(../../img/arrow.svg) no-repeat;
+    background-position: center center;
+    width: 16px;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    height: 20px;
+    display: block;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+[aria-expanded="true"]{
+    font-weight:700 !important;
+}
+a.mn_sub[aria-expanded="true"]::before{
+  -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+a.mn_sub.setnav::before {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+a.mn_sub::before,a.icomenu,.collapsing a,.mn_sb_sb.atv{
+     transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+}
+
+.collapse{
+  display: table;
+ /* padding-left: 15px;*/
+}
+
+.ativado{
+    font-weight: 700;
+}
+
+a.mn_sub.no_sub::before{
+  -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.collapse a::before{
+    content: '';
+    background: url(../img/arrow-sub.svg) no-repeat;
+    background-position: center center;
+    width: 8px;
+    position: absolute;
+    left: -13px;
+    top: 7px;
+    height: 8px;
+    display: table;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.collapse a.mn_sb_sb.atv::before{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.collapse a {
+    font-size: 14px !important;
+    border-bottom: 0 !important;
+    padding: 15px 0 15px 16px !important;
+}
+
+/* FIM MENU */
