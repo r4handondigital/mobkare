@@ -1710,4 +1710,104 @@ a.mn_sub.no_sub::before{
     padding: 15px 0 15px 16px !important;
 }
 
+.painel-bloco{
+    padding:30px 0 0 0;
+}
+
+.painel-bloco .miolo-pao{
+    padding: 11px 19px 11px 0;
+}
+
+
+.painel-bloco h1{
+    font-size:20px;
+    color: #131C23;
+    
+}
+
+.dataTables_wrapper{
+    margin:30px 0;
+}
+
+.dataTables_length,.dataTables_filter,.dataTables_info{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 16px 10px;
+    font-size: 14px;
+}
+
+.dataTable th{
+    background:#f1f4f6;
+    font-size: 12px;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 16px 18px;
+    border-radius: 6px; 
+}
+
+table.dataTable td{
+    background-color: #fff !important;
+    border-bottom: 1px solid #f1f4f6 !important;
+}
+
+.dataTables_wrapper .dataTables_length select,.dataTables_wrapper .dataTables_filter input {
+    border: 0;
+    border-radius: 6px;
+    background-color: #edf1f5;
+    padding: 6px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 3px;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td {
+    padding: 17px 19px 22px 25px;
+    border-top: 1px solid #111;
+}
+
+tfoot{
+    margin-bottom: 30px;
+}
+
+tfoot select{
+    background-color: #e9eaeb;
+    border:0;
+    padding:5px;
+    width: 100%;
+}
+
+.dataTables_paginate{
+    font-size:12px;
+}
+
+.painel-bloco .text-end{
+    padding-top:16px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+    border: 0;
+    border-radius: 6px;
+    background-color: #5099f7 !important;
+    background:transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    background-color:#3785eb !important; 
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 0;
+    border-radius: 6px;
+    background-color: #3785eb !important;
+    background: transparent;
+}
+
+
 /* FIM MENU */
