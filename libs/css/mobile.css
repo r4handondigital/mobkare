@@ -1,11 +1,87 @@
 @media screen and (max-width: 768px) {
+
+	#navegacao-inferior{
+		display: block !important;
+		background:#fff;
+		position: fixed;
+		z-index: 80;
+		box-shadow: 0px -8px 14px rgba(13, 85, 141, 0.07);
+		width: 100%;
+		bottom:0;
+	}
+
+.atv-navegacao:after{
+	content: '';
+	width: 80%;
+	height: 5px;
+	background:#67CC78;
+	position: absolute;
+	bottom: 0;
+	left: 6px;
+}
+
+	.dropblack{
+		background: url(../../img/tres-pontinhos.svg) no-repeat center center;
+	}
+
+	.dropblack span img{
+		display: none;
+	}
+	.dropblack  i{
+		display: none;
+	}
   
-	.navegacao-topo{
+	header .navegacao-topo{
 		display: none;
 	}
 
+	footer, footer .text-end{
+		text-align: center !important;
+	}
 
+	.center-usuario img {
+	    margin-bottom: 10px;
+	    margin-top: -43px;
+	    position: relative;
+	    z-index: 120;
+	    width: 25%;
+}	
 
+	.filtros span{
+		display: none;
+	}
+
+.filtros li a{
+	padding: 20px 28px;
+}
+
+.filtros li:last-child {
+    margin-left: 7px;
+}
+
+.ultimas-atualizacoes {
+    font-size: 1rem;
+}
+
+#bloco-filtro li {
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+
+.user-detalhe {
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    color: #6F8FA6;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.porfiltro:before, .pordata:before {
+    left: 15px;
+    top: 16px;
+}
 	#logo-cliente {
 	    margin: 24px 0;
 	    display: block;

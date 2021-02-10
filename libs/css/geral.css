@@ -118,6 +118,10 @@ header{
     margin-right: 10px;
 }
 
+.dropblack  i{
+    font-style: normal !important; 
+}
+
 .dropblack.show{
     /*background:#131C23;*/
 }
@@ -205,6 +209,11 @@ header .dropdown-item {
 
 }
 
+#navegacao-inferior{
+    display: none;
+}
+
+
 .center-usuario{
     text-align: center;
     margin:0 auto;
@@ -259,14 +268,14 @@ header .dropdown-item {
 .filtros li{display: inline-block;}
 
 .filtros li:last-child{
-    margin-left:30px;
+    margin-left: 10px;
 }
 .filtros li a {
     position: relative;
     background-color: rgba(111,143,166,0.2);
     color: #6F8FA6;
     padding: 13px 20px 12px 40px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 6px;
 }
 
@@ -515,6 +524,7 @@ a.bt-plus:before{
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 40px;
+    background-position: center;
 }
 .lupa-plus{
     position: absolute;
