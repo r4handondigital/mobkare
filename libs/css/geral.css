@@ -279,8 +279,19 @@ header .dropdown-item {
     border-radius: 6px;
 }
 
+.sessao-filtro{
+    display: none;
+}
+.sessao-filtro.ativado{
+    display: block !important;
+}
+
 .filtros li a:hover{
     text-decoration: none;
+}
+
+.porfiltro{
+    cursor: pointer;
 }
 
 .porfiltro:before, .pordata:before{
@@ -301,12 +312,14 @@ header .dropdown-item {
     background: url(../../img/data.svg) no-repeat;
 }
 
-#display-filtro{
+
+
+#display-filtro,#display-data{
     padding-top: 30px;
     margin-bottom: 50px;
 }
 
-#display-filtro h4{
+#display-filtro h4,#display-data h4{
     font-size:12px;
     display: block;
     width: 100%;
@@ -331,11 +344,22 @@ header .dropdown-item {
     color: #6f8fa6;
     padding: 14px 14px;
     border-radius:6px;
+    font-weight:300;
 }
 
 #bloco-filtro li a.ativo{
     background-color: rgba(111,143,166,0.2);
     text-decoration: none;
+}
+#display-data input{
+    border-radius: 6px;
+}
+
+.filtro-data{
+    display: none;
+}
+.filtro-data.ativado{
+    display: block !important;
 }
 
 .postagens{

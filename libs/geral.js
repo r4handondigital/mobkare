@@ -23,9 +23,13 @@ $(document).ready(function(){
         }
     } );
  
-  /*$(".mn_sub").click(function(){
-    $("a").toggleClass("ativado");
-  });*/
+  $(".porfiltro").click(function(){
+    $("#display-filtro").toggleClass("ativado");
+  });
+
+ $(".pordata").click(function(){
+    $("#display-data").toggleClass("ativado");
+  });
 
 	$('#data-modal').datepicker({
 	    format: 'mm/dd/yyyy',
