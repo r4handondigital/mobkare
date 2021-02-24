@@ -51,6 +51,18 @@ $(document).ready(function(){
 
 });
 
+
+/* MENU */
+
+function openNavMobile() {
+  document.getElementById("menuMovMobile").style.width = "100%";
+}
+
+function closeNavMobile() {
+  document.getElementById("menuMovMobile").style.width = "0";
+}
+
+
 /* ALIMENTAÇÃO */
 
 function openNav() {

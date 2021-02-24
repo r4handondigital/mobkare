@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">       
     <link rel="stylesheet" type="text/css" href="libs/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" type="text/css" href="libs/datatable/jquery.dataTables.min.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="libs/css/geral.css">
+     <link rel="stylesheet" type="text/css" href="libs/css/mobile.css">
     <title>Mob Kare - Admin</title> 
 
  
@@ -50,7 +52,7 @@
             <div class="col-md-4">
                 <div class="remote-ico dropdown text-end">
                   <button class="dropblack dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span><img src="img/personal.png"></span>Filipa Coimbra
+                    <span><img src="img/personal.png"></span><i>Filipa Coimbra</i>
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item" href="#">Minhas configurações</a></li>
@@ -63,11 +65,17 @@
         </div>
       </div>
     </header>
-    <section class="imagem-topo"></section>
+    <section class="imagem-topo">
+        <div class="container-fluid">            
+            <a class="bt-menu-mobile" onclick="openNavMobile()">Menu</a>
+        </div>
+    </section>
 
     <section id="conteudo" class="sessao-admin"> <!-- class="sessao-admin"-->
         <div class="container-fluid flex-xl-nowrap">
          <div class="row ">
+
+          <!--#MENU DESKTOP-->
             <div class="col-sm-12 col-md-3" id="bg-menu">
                 <div id="Menu" class="list-group">
                   <a href="#">Meu Dashboard</a>
@@ -85,7 +93,7 @@
                   <a href="#">- Sistemas</a>
                   <a href="#">- Proposta de Ação (V2)</a>
                 </div>
-                  <a href="#demo4"  data-bs-toggle="collapse" class="mn_sub" data-bs-parent="#Menu" aria-expanded="true">Configurações Gerais</a>
+                  <a href="#demo4"  data-bs-toggle="collapse" class="mn_sub" data-bs-parent="#Menu" aria-expanded="true" >Configurações Gerais</a>
                   <div class="collapse show" id="demo4">
                    <a href="#" >- Rotinas</a>
                    <a href="#" >- Cozinha</a>
@@ -97,13 +105,19 @@
                   </div>
                   <a href="#">Mensagens</a>
               </div><!-- #menu -->
+              <!-- FIM DESKTOP -->
             </div><!-- col-sm-12 col-md-3-->
+
+            <!-- #MENU MOBILE-->
+
+      
+
 
             <div class="col-sm-12 col-md-9" >
                   <div class="container-lg painel-bloco">
                       
                      <div class="row">
-                        <div class="col-6">
+                        <div class="col-8">
                           <ul class="miolo-pao">
                             <li class="fit-um">
                               <a href="#">Meu dashboard</a>
@@ -112,9 +126,9 @@
                           </ul>
                           <h1>Gerenciar Utentes</h1>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
                           <div class="text-end">
-                            <a href="#" class="btn btn-primary">Adcionar novo</a>
+                            <a href="#" class="btn btn-primary"><i>Adcionar novo</i></a>
                           </div>
                         </div><!--.col-6 -->
                     </div><!--.row-->
@@ -135,133 +149,158 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
+                                        <td><a href="">System Architect</a></td>
+                                        <td>03</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="atv">Ativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>2011/07/25</td>
-                                        <td>$170,750</td>
+                                        <td>01</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="intv">Inativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12</td>
-                                        <td>$86,000</td>
+                                        <td>04</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="atv">Ativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>Senior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2012/03/29</td>
-                                        <td>$433,060</td>
+                                        <td>08</td>
+                                        <td>203 / Piso 2</td>
+                                       <td><span class="atv">Ativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>33</td>
-                                        <td>2008/11/28</td>
-                                        <td>$162,700</td>
+                                        <td>04</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="atv">Ativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
                                         <td>Integration Specialist</td>
-                                        <td>New York</td>
-                                        <td>61</td>
-                                        <td>2012/12/02</td>
-                                        <td>$372,000</td>
+                                        <td>08</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="atv">Ativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
                                         <td>Sales Assistant</td>
-                                        <td>San Francisco</td>
-                                        <td>59</td>
-                                        <td>2012/08/06</td>
-                                        <td>$137,500</td>
+                                        <td>04</td>
+                                        <td>203 / Piso 2</td>
+                                       <td><span class="atv">Ativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>9</td>
                                         <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
+                                        <td>01</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="atv">Ativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                       <tr>
                                         <td>10</td>
                                         <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
+                                        <td>07</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="intv">Inativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
+                                    
                                       <tr>
                                         <td>11</td>
                                         <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
+                                        <td>04</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="intv">Inativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                       <tr>
                                         <td>12</td>
                                         <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
+                                        <td>01</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="intv">Inativo</span></td>
+                                       <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                       <tr>
                                         <td>13</td>
                                         <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
+                                        <td>09</td>
+                                        <td>203 / Piso 2</td>
+                                       <td><span class="intv">Inativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
                                       <tr>
                                         <td>14</td>
                                         <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
+                                        <td>04</td>
+                                        <td>203 / Piso 2</td>
+                                        <td><span class="intv">Inativo</span></td>
+                                        <td>
+                                            <a href="" class="aclist"><img src="img/ico-editar.svg"></a>
+                                            <a href="" class="aclist"><img src="img/ico-delete.svg"></a>
+                                        </td>
                                     </tr>
-                                     <tr>
-                                        <td>15</td>
-                                        <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
-                                    </tr>
-                                      <tr>
-                                        <td>16</td>
-                                        <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
-                                    </tr>
+                                    
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
+                                        <th>ID</th>
+                                        <th>NOME</th>
+                                        <th>REPONSÁVEIS</th>
+                                        <th>AP/PISO</th>
+                                        <th>STATUS</th>
+                                        <th>AÇÕES</th>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -274,6 +313,60 @@
           </div><!-- row-->
         </div><!-- container -->
     </section>
+
+    <section id="navegacao-inferior">
+     <ul class="navegacao-topo">
+                  <li class="atv-navegacao">
+                    <a class="ativo" href=""><img src="img/home.svg" width="24" height="24"><span>Home</span></a>
+                  </li>
+                  <li>
+                    <a href=""><img src="img/visitar.svg" width="24" height="24"><span>Visitar</span></a>
+                  </li>
+                  <li class="alert-msg">
+                    <a href=""><img src="img/mensagens.svg" width="24" height="24"><span>Mensagens</span></a>
+                  </li>
+
+                </ul>
+    </section>
+
+
+     <div id="menuMovMobile" class="sidenavmenu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavMobile()"><img src="img/close.svg" width="46" height="46"></a>
+         
+
+             <div id="Menu" class="list-group">
+                <a href="#">Meu Dashboard</a>
+                <a href="#" class="ativado">Gerenciar Utentes</a>
+                <a href="#">Gerenciar Funcionários</a>                         
+                <a href="#demo1" data-bs-toggle="collapse" class="mn_sub" data-bs-parent="#Menu">Saúde</a>
+              <div class="collapse" id="demo1">    
+                <a href="#" >- Avaliações médica</a>
+                <a href="#" >- Nutricional</a>
+                <a href="#" >- Internato</a>          
+              </div>
+              <a href="#demo2" data-bs-toggle="collapse" class="mn_sub" data-bs-parent="#Menu">Farmácia</a>
+              <div class="collapse" id="demo2">
+                <a href="#">- Web Application Icons</a>
+                <a href="#">- Sistemas</a>
+                <a href="#">- Proposta de Ação (V2)</a>
+              </div>
+                <a href="#demo4"  data-bs-toggle="collapse" class="mn_sub" data-bs-parent="#Menu" >Configurações Gerais</a>
+                <div class="collapse" id="demo4">
+                 <a href="#" >- Rotinas</a>
+                 <a href="#" >- Cozinha</a>
+                 <a href="#" >- Categorias de Usuários</a>
+                 <a href="#" >- Expedientes</a>
+                 <a href="#" >- Serviços</a>
+                 <a href="#" >- Apartamentos</a>
+                 <a href="#" >- Notificações</a>
+                </div>
+                <a href="#">Mensagens</a>
+            </div><!-- #menu -->
+
+        </div><!--sidenav-->
+
+      <!-- FIM MOBILE -->
+
 
     <footer>
         <div class="container-fluid">
@@ -299,6 +392,7 @@
     <script type="text/javascript" src="libs/jquery-migrate-3.3.2.min.js"></script>
     <script type="text/javascript" src="libs/datatable/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="libs/lightbox/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
