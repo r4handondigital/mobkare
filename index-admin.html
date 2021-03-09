@@ -16,7 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">       
     <link rel="stylesheet" type="text/css" href="libs/lightbox/css/lightbox.min.css">
+     <link rel="stylesheet" type="text/css" href="libs/datatable/jquery.dataTables.min.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+     <link rel="stylesheet" type="text/css" href="libs/dist/assets/owl.theme.default.min.css">
+     <link rel="stylesheet" type="text/css" href="libs/dist/assets/owl.theme.green.min.css">
+     <link rel="stylesheet" type="text/css" href="libs/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="libs/css/geral.css">
+     <link rel="stylesheet" type="text/css" href="libs/css/mobile.css">
     <title>Mob Kare - Admin</title> 
 
  
@@ -49,7 +55,7 @@
             <div class="col-md-4">
                 <div class="remote-ico dropdown text-end">
                   <button class="dropblack dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span><img src="img/personal.png"></span>Filipa Coimbra
+                    <span><img src="img/personal.png"></span><i>Filipa Coimbra</i>
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item" href="#">Minhas configurações</a></li>
@@ -65,10 +71,10 @@
     <section class="imagem-topo"></section>
 
     <section id="conteudo" class="sessao-admin"> <!-- class="sessao-admin"-->
-        <div class="container-fluid flex-xl-nowrap">
+        <div class="container-lg">
          <div class="row ">
-            <div class="col-sm-12 col-md-3" id="bg-menu">
-                <div id="Menu" class="list-group">
+            <div class="col-sm-12 col-md-3" >
+                <div id="Menu">
                   <a href="#">Meu Dashboard</a>
                   <a href="#">Gerenciar Utentes</a>
                   <a href="#">Gerenciar Funcionários</a>                         
@@ -119,7 +125,7 @@
                       
                       <div class="row">
 
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                             <h3 class="ico-msn">ÚLTIMAS MENSAGENS</h3>
 
                             <ul class="lista-msg">
@@ -132,7 +138,7 @@
                             <a href="" class="btn-v-mais text-end">Ver todas</a>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-12">
                             <h3 class="ico-trf">PRÓXIMAS TAREFAS</h3>
 
                             <ul class="lista-msg">
@@ -152,6 +158,22 @@
           </div><!-- row-->
         </div><!-- container -->
     </section>
+
+     <section id="navegacao-inferior">
+     <ul class="navegacao-topo">
+                  <li class="atv-navegacao">
+                    <a class="ativo" href=""><img src="img/home.svg" width="24" height="24"><span>Home</span></a>
+                  </li>
+                  <li>
+                    <a href=""><img src="img/visitar.svg" width="24" height="24"><span>Visitar</span></a>
+                  </li>
+                  <li class="alert-msg">
+                    <a href=""><img src="img/mensagens.svg" width="24" height="24"><span>Mensagens</span></a>
+                  </li>
+
+                </ul>
+    </section>
+
 
     <footer>
         <div class="container-fluid">

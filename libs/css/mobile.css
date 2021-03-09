@@ -1,10 +1,55 @@
 @media screen and (max-width: 768px) {
 
+.inbox_people{
+	padding-left:0 !important;
+}
+
+.chat_img {
+    float: left;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.chat_list {
+    border-top: 1px solid #dde4ea;
+    margin: 0 9px 0 0;
+    padding: 19px 11px 10px;
+    text-align: center;
+}
+
+.chat_ib h5 {
+    font-size: 0.8rem;
+
+ }
+
+ .chat_ib p {
+    font-size: 0.7rem;
+
+  }
+
+  .chat_people{
+  	position: relative;
+  }
+
+  .chat_ib h5 span {
+    float: right;
+    margin-top: 0;
+    position: absolute;
+    top: -4px;
+    right: 18px;
+}
+.received_withd_msg {
+    width: 80%;
+}
+.sent_msg {
+    float: right;
+    width: 80%;
+}
 	.bt-menu-mobile,#navegacao-inferior{
 		display: block !important;
 	}
 
-	.dropblack span img,#bg-menu,.dropblack  i,header .navegacao-topo,.filtros span,.btn-primary i{
+	.dropblack span img,#Menu,.dropblack  i,header .navegacao-topo,.filtros span,.btn-primary i{
 		display: none;
 	}
 
